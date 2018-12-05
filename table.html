@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    table,td
+    {
+        border : 1px solid black;
+        
+    }
+    </style>
+</head>
+<body>
+    <h1>Prompt the user</h1>
+
+    <p id="row"></p>
+    <p id="column"></p>
+    <table id="table2"></table>
+    <button onclick="createTable()">Click here</button>
+
+    <script>
+            function createTable()
+            {
+                 rn = prompt("enter rows");
+                 cn = prompt("Input number of columns");
+              
+             for( r=0;r<rn;r++)
+              {
+               var x=document.getElementById("table2").insertRow(r);
+               for(var c=0;c<cn;c++)  
+                {
+                 var y=  x.insertCell(c);
+                 y.innerHTML += "row"+r+ "," +"column"+c; 
+                }
+               }
+            }
+
+    </script>
+    
+        
+</body>
+</html>

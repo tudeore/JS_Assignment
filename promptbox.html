@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JAVA PROMPT</h1>
+    
+    <button type="show result" onclick="myfunction()">Show Result</button>
+    
+    <P id="prompt1"></P>
+    <p id="prompt2"></p>
+    <p id="prompt3"></p>
+
+
+    <script>
+        function myfunction(){
+        
+        var person = prompt("please enter the number:",person);
+        if(person<1 ||person>30||isNaN(person)){
+            alert("enter correct input");
+        }
+        else{
+            for(var count=1;count<=person;count++){
+            var a= document.getElementById("prompt1");
+            a.innerHTML += "*";
+        }
+        }
+        
+        var person = prompt("please enter the number:",person);
+        if(person<1 ||person>30||isNaN(person)){
+            alert("enter correct input");
+        }
+        else{
+            for(var count=1;count<=person;count++){
+            var a= document.getElementById("prompt2");
+            a.innerHTML += "*";
+        }
+       
+        }
+        var person = prompt("please enter the number:",person);
+        if(person<1 ||person>30||isNaN(person)){
+            alert("enter correct input");
+        }
+        else{
+            for(var count=1;count<=person;count++){
+            var a= document.getElementById("prompt3");
+            a.innerHTML += "*";
+
+        }
+        
+        
+        }
+    }
+
+
+         </script>
+</body>
+</html>

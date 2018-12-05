@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Tempreture Conversion</h1>   
+        Tempreture in Fahrenheit  : <input type="text" id="text">
+        <button type="show result" onclick="myfuction()" value="show results" name="show results">Show Result</button>
+        <p id="demo"></p>  
+
+    <script>
+        function myfuction(){
+            var y,text;
+            y = document.getElementById("text").value;
+                
+            
+                  if(isNaN(y))
+                   {
+                      alert("Please Enter a valid Number");
+                   }
+                   else if(y =="")
+                   {
+                       alert("please enter a number");
+                   }
+            else {
+                
+                y=(y-32)*5/9;
+                document.getElementById("demo").innerHTML=y;
+                    //document.write(y);
+            }
+             
+
+        }
+
+
+    </script>
+</body>
+</html>
